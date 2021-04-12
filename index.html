@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        wherewouldyougowithme?
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <h1>Dove vorresti andare in vacanza con me?</h1>
+    <h3>Rispondi a qualche semplice domanda...</h3>
+    <!-- Create Form -->
+    <form id="form">
+        <div class="form-control">
+            <label for="question_one" id="question_one">
+        In generale, in quale tipo di luogo vorresti andare?
+      </label>
+
+            <!-- Dropdown options -->
+            <select name="type-of-vacation" id="type-of-vacation">
+        <option value=""></option>
+        <option value="countryside">Un luogo naturalistico</option>
+        <option value="city">Una citta'</option>
+      </select>
+        </div>
+
+        <!-- --------------------------------- -->
+        <!-- COUNTRYSIDE -->
+        <!-- --------------------------------- -->
+        <div class="form-control" style="display:none;" id="question_one_countryside">
+            <label>
+        Saresti disposta a fare del trekking per raggiungere mete nascoste?
+        <br>Senza slogarsi nessuna caviglia, si intende
+      </label>
+
+            <!-- Dropdown options -->
+            <select name="type-of-countryside" id="type-of-countryside">
+        <option value=""></option>
+        <option value="trekking">Voglio impegnarmi!</option>
+        <option value="easy-step">Mi pesa il 🍑 </option>
+      </select>
+        </div>
+
+
+        <!-- --------------------------------- -->
+        <!-- CITY -->
+        <!-- --------------------------------- -->
+
+        <div class="form-control" style="display:none;" id="question_one_city">
+            <label>
+        Vorresti visitare una grossa citta' o girare per paesini?
+      </label>
+
+            <!-- Dropdown options -->
+            <select name="type-of-city" id="type-of-city">
+        <option value=""></option>
+        <option value="metropolis">Una metropoli!</option>
+        <option value="small-city">Paesini</option>
+      </select>
+        </div>
+
+        <!-- Multi-line Text Input Control 
+		<button type="submit" value="submit" onclick="submitButton()">
+			Submit
+		</button>-->
+    </form>
+</body>
+
+</html>
